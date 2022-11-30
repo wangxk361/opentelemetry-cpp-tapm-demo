@@ -121,7 +121,7 @@ int main(int argc, char **argv)
           std::move(processors),
           opentelemetry::sdk::resource::Resource::Create({
               {"service.name", "otlp-apm-demo"},
-              {"token", "wGcGKSZTrBHxJuPubobc"},
+              {"token", "wGcGK--------------"},
           })
       );
   std::shared_ptr<opentelemetry::trace::TracerProvider> provider = opentelemetry::sdk::trace::TracerProviderFactory::Create(context);
